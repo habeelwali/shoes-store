@@ -39,3 +39,4 @@ jobs:
         
       - name: deploying on surge
         run: surge ./build http://shoes-str.surge.sh/ --token ${{ secrets.SURGE_TOKEN }}
+        
