@@ -1,8 +1,8 @@
-import React, {useRef} from 'react'
+import React from 'react'
 import shoes from './shoes.png'
 import { Link } from 'react-router-dom';
 import Typewriter from 'typewriter-effect'
-import useWebAnimations ,{bounce,backInLeft} from "@wellyshen/use-web-animations";
+import useWebAnimations  from "@wellyshen/use-web-animations";
 
 function Home() {
    
