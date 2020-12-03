@@ -411,8 +411,7 @@ transition: 0.5s linear;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 10%;
-    background: none;
+   
     
     
 }
@@ -480,7 +479,10 @@ transition: 0.5s linear;
   @media(max-width:375px){
     .form {
         height: 100vh;
-        margin-top: 1%;
+        margin-top: 20%;
+      }
+      .form > button {
+          margin-bottom: 10%;
       }
   }
 
