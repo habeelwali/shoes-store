@@ -1,16 +1,52 @@
-import React from 'react'
+import React, {useRef} from 'react'
 import shoes from './shoes.png'
 import { Link } from 'react-router-dom';
+import Typewriter from 'typewriter-effect'
+import useWebAnimations ,{bounce,backInLeft} from "@wellyshen/use-web-animations";
 
 function Home() {
+   
+
+
+
+    const  { ref,   } = useWebAnimations({
+       
+        keyframes: {
+            transform: ["translateX( 100px )"], // Move by 500px
+            background: ["red", "blue", "green"], // Go through three colors
+          },
+          timing: {
+            delay: 500, // Start with a 500ms delay
+            duration: 1000, // Run for 1000ms
+            iterations: 2, // Repeat once
+            direction: "alternate", // Run the animation forwards and then backwards
+            easing: "ease-in-out", // Use a fancy timing function
+          },
+        }
+        );
+   
     return (
         <div >
 
            
             <div >
-                <h1 className="name">welcome to shoes store</h1>
+            <div className="name">
+        <Typewriter
+                  options={{
+                    strings: ["welcome to shoes store"],
+                    autoStart: true,
+                    loop: true,
+                    wrapperClassName: "h1",
+                    cursorClassName: "Typewriter__cursor"
+                  }}
+                />
+                
+        </div>
+                
                 <div className="paragraph">
+
                 <p>
+                     
                      Consectetur cum sed, mi arcu posuere auctor. Elit dignissim egestas laoreet
                     praesent ornare tellus ut fringilla convallis mattis proin.
                     Placerat cum vel nam duis. Suspendisse urna suspendisse odio
@@ -25,14 +61,14 @@ function Home() {
             <div >
                 <Link to="/Product" className="home">
            
-                <img className="img" src={shoes}  alt=""/>
+                <img className="img"  src={shoes} id="abc" alt=""/>
                 </Link>
                 </div>
             </div>
 
 
             <Link to="/Product" >
-            <button className="bt">shope now</button>
+            <button className="bt"  ref={ref}>shope now</button>
             </Link>
         </div>
 

@@ -318,11 +318,12 @@ transition: 0.5s linear;
       padding: 10px;
   }
   .home img{
-      width: 50%;
+      width: 40%;
       padding: 10px;
       margin-right: -40%;
-      margin-top: -35%;
+      margin-top: -30%;
       background: none;
+     
       
   }
   .home img:hover{
@@ -419,7 +420,7 @@ transition: 0.5s linear;
     display: flex;
     flex-direction: column;
     justify-content: center;
-   
+    
   }
   
   .form > h1 {
@@ -478,7 +479,7 @@ transition: 0.5s linear;
   @media(max-width:375px){
     .form {
         height: 100vh;
-        
+        margin-top: 1%;
       }
   }
 
@@ -488,15 +489,12 @@ transition: 0.5s linear;
  display: flex;
  align-items: center;
  justify-content: center;
- 
-
- height: 50px;
+margin-top: 10%;
+margin-bottom: 1%;
 
   }
   .txt{
-   
-   margin-bottom: 0px;
-     
+
     color: red;
    font-weight: bold;
   font-size: 3vh;
@@ -504,8 +502,6 @@ transition: 0.5s linear;
 
    @media(max-width:375px){
     .txt{
-       margin-top: 2%;
-      
     font-size: 2.5vh;
     }
    }
